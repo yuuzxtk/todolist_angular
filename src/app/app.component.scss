@@ -1,0 +1,53 @@
+.topo{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+
+
+}
+.tasks{
+    margin: 10px;
+    padding: 10px 20px;
+    border: 1px solid gray; 
+    border-radius: 5px;
+
+
+    &__title{
+        font-size: 20px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+    }
+    &__buttom{
+        margin: 10px;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;       
+        list-style: none;
+        padding: 0;
+
+        &__item{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border: 1px solid gray;
+            border-radius: 8px;
+            padding: 10px;
+            background-color: #7a3d77;
+            color: white;
+
+            &--done{
+                background-color: #287909;
+                text-decoration: line-through;
+            }
+        }
+    }
+    .removebuttom{
+        margin-left: auto;
+    }
+}
